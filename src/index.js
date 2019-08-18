@@ -97,24 +97,31 @@ function actionPage(){
         });
         search.value = '';
     });  // добавить для события нажатия ентер
-    
-   function filter(){
+}
+
+function filter(){
+    const cards = document.querySelectorAll('.goods .card'), // все карточки товаров
+    discountCheckbox = document.getElementById('discount-checkbox'),
+    min = document.getElementById('min'),  //минимальная цена в фильтре
+    max = document.getElementById('max'),
+    activeLi = document.querySelector('.catalog-list li.active');
+
     cards.forEach((card) => {
         const cardPrice = card.querySelector('.card-price');
         const price = parseFloat(cardPrice.textContent),
         discount = card.querySelector('.card-sale');
+        card.parentNode.style.display = '';
         if((min.value && price < min.value) || (max.value && price > max.value)){
             card.parentNode.style.display = 'none';
         }
         else if (discountCheckbox.checked && !discount){
             card.parentNode.style.display = 'none';
         }
-        else{
-            card.parentNode.style.display = '';
+        else if(activeLi && card.dataset.category !== activeLi.textContent){
+            card.parentNode.style.display = 'none';
         }
     });   
   }
-}
  //получение данных с сервера
 function getData(){
     const goodsWrapper = document.querySelector('.goods');
@@ -160,6 +167,7 @@ function renderCatalog(){
    const cards = document.querySelectorAll('.goods .card'),
    catalogList = document.querySelector('.catalog-list'),
    catalogBtn = document.querySelector('.catalog-button'),
+   filterTitle = document.querySelector('.filter-title h5'),
    catalogWrapper = document.querySelector('.catalog');
    const categories = new Set(); //коллекция, запоминает только разные значения
    cards.forEach((card) => {
@@ -170,6 +178,7 @@ function renderCatalog(){
        li.textContent = item;
        catalogList.appendChild(li);
    });
+   const allLi = catalogList.querySelectorAll('li');
    catalogBtn.addEventListener('click', (event) => {
         if(catalogWrapper.style.display){
            catalogWrapper.style.display = '';
@@ -177,13 +186,17 @@ function renderCatalog(){
            catalogWrapper.style.display = 'block';
         }
         if(event.target.tagName ==='LI'){
-            cards.forEach((card) =>{
-                if(card.dataset.category === event.target.textContent){
-                    card.parentNode.style.display='';
-                }else{
-                    card.parentNode.style.display='none';
-                }      
+            
+            allLi.forEach((elem)=>{
+                if(elem===event.target){
+                    elem.classList.add('active');
+                }
+                else{
+                    elem.classList.remove('active');
+                }
             });
+            filterTitle.textContent = event.target.textContent;
+            filter();
         }
    });
 }
@@ -192,9 +205,9 @@ function renderCatalog(){
 //end получение данных с сервера 
 getData().then((data) =>{
     renderCards(data);
+    renderCatalog();
     toggleCheckbox(); 
     toggleCart();
     workCart();
     actionPage();
-    renderCatalog();
 });

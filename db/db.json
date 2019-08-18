@@ -1,60 +1,6 @@
 {
-	"goods": [{
-		"title": "Игровая приставка Sony PlayStation 4 Pro",
-		"price": 33990,
-		"sale": false,
-		"img": "https://cdn1.ozone.ru/multimedia/c400/1033180284.jpg",
-		"hoverImg": "https://cdn1.ozone.ru/multimedia/c400/1033180283.jpg",
-		"category": "Игровая приставка"
-	}, {
-		"title": "Игровая приставка Sony PlayStation 3 Super Slim",
-		"price": 16499,
-		"sale": true,
-		"img": "https://cdn1.ozone.ru/multimedia/c400/1027495663.jpg",
-		"hoverImg": "https://cdn1.ozone.ru/multimedia/c400/1028469540.jpg",
-		"category": "Игровая приставка"
-	}, {
-		"title": "Игровая приставка Xbox One X",
-		"price": 39990,
-		"sale": false,
-		"img": "https://cdn1.ozone.ru/multimedia/c400/1024358491.jpg",
-		"category": "Игровая приставка"
-	}, {
-		"title": "Игровая приставка Xbox One S",
-		"price": 23411,
-		"sale": true,
-		"img": "https://cdn1.ozone.ru/multimedia/c400/1024822131.jpg",
-		"hoverImg": "https://cdn1.ozone.ru/multimedia/c400/1024822128.jpg",
-		"category": "Игровая приставка"
-	}, {
-		"title": "Игровая приставка Nintendo Switch",
-		"price": 24751,
-		"sale": false,
-		"img": "https://cdn1.ozone.ru/multimedia/c400/1021386685.jpg",
-		"hoverImg": "https://cdn1.ozone.ru/multimedia/c400/1026072683.jpg",
-		"category": "Игровая приставка"
-	}, {
-		"title": "Игровая приставка Sega Retro Genesis HD",
-		"price": 3624,
-		"sale": true,
-		"img": "https://cdn1.ozone.ru/multimedia/c400/1024928305.jpg",
-		"hoverImg": "https://cdn1.ozone.ru/multimedia/c400/1024928306.jpg",
-		"category": "Игровая приставка"
-	}, {
-		"title": "Игровая приставка Dendy Junior",
-		"price": 1551,
-		"sale": true,
-		"img": "https://cdn1.ozone.ru/multimedia/c400/1021877092.jpg",
-		"hoverImg": "https://cdn1.ozone.ru/multimedia/c400/1021877092.jpg",
-		"category": "Игровая приставка"
-	}, {
-		"title": "Игровая приставка Sony PlayStation Classic",
-		"price": 10445,
-		"sale": false,
-		"img": "https://cdn1.ozone.ru/multimedia/c400/1025222877.jpg",
-		"hoverImg": "https://cdn1.ozone.ru/multimedia/c400/102538227.jpg",
-		"category": "Игровая приставка"
-	}, {
+	"goods": [
+		{
 		"title": "Клавиатура Logitech Wireless Keyboard K360",
 		"price": 2390,
 		"sale": false,
@@ -115,7 +61,64 @@
 		"sale": true,
 		"img": "https://cdn1.ozone.ru/multimedia/c400/1026951535.jpg",
 		"category": "Игры и софт"
+	},
+	{
+		"title": "Игровая приставка Sony PlayStation 4 Pro",
+		"price": 33990,
+		"sale": false,
+		"img": "https://cdn1.ozone.ru/multimedia/c400/1033180284.jpg",
+		"hoverImg": "https://cdn1.ozone.ru/multimedia/c400/1033180283.jpg",
+		"category": "Игровая приставка"
 	}, {
+		"title": "Игровая приставка Sony PlayStation 3 Super Slim",
+		"price": 16499,
+		"sale": true,
+		"img": "https://cdn1.ozone.ru/multimedia/c400/1027495663.jpg",
+		"hoverImg": "https://cdn1.ozone.ru/multimedia/c400/1028469540.jpg",
+		"category": "Игровая приставка"
+	}, {
+		"title": "Игровая приставка Xbox One X",
+		"price": 39990,
+		"sale": false,
+		"img": "https://cdn1.ozone.ru/multimedia/c400/1024358491.jpg",
+		"category": "Игровая приставка"
+	}, {
+		"title": "Игровая приставка Xbox One S",
+		"price": 23411,
+		"sale": true,
+		"img": "https://cdn1.ozone.ru/multimedia/c400/1024822131.jpg",
+		"hoverImg": "https://cdn1.ozone.ru/multimedia/c400/1024822128.jpg",
+		"category": "Игровая приставка"
+	}, {
+		"title": "Игровая приставка Nintendo Switch",
+		"price": 24751,
+		"sale": false,
+		"img": "https://cdn1.ozone.ru/multimedia/c400/1021386685.jpg",
+		"hoverImg": "https://cdn1.ozone.ru/multimedia/c400/1026072683.jpg",
+		"category": "Игровая приставка"
+	}, {
+		"title": "Игровая приставка Sega Retro Genesis HD",
+		"price": 3624,
+		"sale": true,
+		"img": "https://cdn1.ozone.ru/multimedia/c400/1024928305.jpg",
+		"hoverImg": "https://cdn1.ozone.ru/multimedia/c400/1024928306.jpg",
+		"category": "Игровая приставка"
+	}, {
+		"title": "Игровая приставка Dendy Junior",
+		"price": 1551,
+		"sale": true,
+		"img": "https://cdn1.ozone.ru/multimedia/c400/1021877092.jpg",
+		"hoverImg": "https://cdn1.ozone.ru/multimedia/c400/1021877092.jpg",
+		"category": "Игровая приставка"
+	}, {
+		"title": "Игровая приставка Sony PlayStation Classic",
+		"price": 10445,
+		"sale": false,
+		"img": "https://cdn1.ozone.ru/multimedia/c400/1025222877.jpg",
+		"hoverImg": "https://cdn1.ozone.ru/multimedia/c400/102538227.jpg",
+		"category": "Игровая приставка"
+	}, 
+	{
 		"title": "Darksiders III. Коллекционное издание",
 		"price": 3990,
 		"sale": false,
